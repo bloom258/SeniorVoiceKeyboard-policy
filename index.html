@@ -5,86 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시니어 목소리 키보드 개인정보처리방침</title>
     <style>
-        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; line-height: 1.8; padding: 20px; color: #333; max-width: 800px; margin: auto; word-break: keep-all; }
-        h1 { color: #2E7D32; border-bottom: 3px solid #2E7D32; padding-bottom: 10px; }
-        h2 { color: #1B5E20; margin-top: 30px; border-left: 5px solid #2E7D32; padding-left: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .highlight { font-weight: bold; color: #D32F2F; }
-        .security-box { background-color: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0; border-radius: 8px; }
-        .link-text { color: #1976D2; text-decoration: underline; }
-        .footer { margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px; font-weight: bold; color: #666; }
+        :root {
+            --pastel-bg: #F9FCF9;
+            --pastel-card: #FFFFFF;
+            --pastel-primary: #6B9080;
+            --pastel-secondary: #A4C3B2;
+            --pastel-accent: #ECA392;
+            --pastel-text: #4A4A4A;
+            --pastel-border: #E2E8E4;
+        }
+        body { 
+            font-family: 'SUIT', 'Cafe Dongdong', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; 
+            line-height: 1.7; 
+            padding: 20px; 
+            color: var(--pastel-text); 
+            background-color: var(--pastel-bg);
+            max-width: 800px; 
+            margin: auto; 
+            word-break: keep-all; 
+        }
+        h1 { 
+            color: var(--pastel-primary); 
+            text-align: center;
+            border-bottom: 2px solid var(--pastel-secondary); 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+        }
+        h2 { 
+            color: var(--pastel-primary); 
+            background-color: #F1F6F2;
+            margin-top: 35px; 
+            padding: 12px 15px; 
+            border-radius: 8px;
+            font-size: 1.15rem;
+            border-left: 5px solid var(--pastel-secondary);
+        }
+        ul { padding-left: 25px; margin-top: 10px; }
+        li { margin-bottom: 10px; }
+        .highlight { font-weight: bold; color: var(--pastel-accent); }
+        .security-box { 
+            background-color: var(--pastel-card); 
+            border: 1px solid var(--pastel-border); 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .link-text { color: var(--pastel-primary); text-decoration: underline; font-weight: bold; }
+        .footer { 
+            margin-top: 50px; 
+            border-top: 1px solid var(--pastel-border); 
+            padding-top: 20px; 
+            text-align: right;
+            color: #888; 
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
     <h1>시니어 목소리 키보드 개인정보처리방침</h1>
 
     <div class="security-box">
-        <strong>💡 핵심 요약 및 보안 선언:</strong> 
-        본 키보드 앱은 <strong>입력된 모든 텍스트를 외부 서버로 저장하거나 기록하지 않으며, 실시간 입력 내용 또한 별도로 수집되지 않습니다.</strong> 
-        개인정보 보호를 위해 최신 보안 정책 및 운영체제(Android)의 가이드라인을 엄격히 준수합니다.
+        <strong style="color: var(--pastel-primary); font-size: 1.1rem;">💡 핵심 요약 및 보안 선언:</strong><br><br>
+        본 키보드 앱은 <strong>사용자의 일반적인 입력 텍스트 및 대화 내용을 외부 서버에 저장하지 않습니다.</strong><br>
+        단, 음성 인식 기능 사용 시에는 Google의 음성 인식 서비스로 데이터가 전송될 수 있으며, 해당 데이터는 당사 서버에 저장되지 않습니다.<br>
+        개인정보 보호를 위해 안드로이드(Android) 운영체제의 보안 가이드라인을 엄격히 준수하며, 서비스 운영 및 품질 개선에 필요한 최소한의 비식별 데이터만 안전하게 처리합니다.
     </div>
 
     <h2>1. 개인정보의 처리 목적</h2>
     <ul>
-        <li>서비스 제공 및 기능 실행 (음성 인식 기반 텍스트 변환 등)</li>
-        <li>가족 안심 안부 확인 서비스 제공 (마지막 활동 시간 공유)</li>
-        <li>앱 안정성 확보 및 오류 분석</li>
-        <li>기능 개선 및 품질 향상 (사투리 패턴 학습 및 사전 업데이트)</li>
+        <li>음성 인식 기반 텍스트 입력 기능 제공</li>
+        <li>가족 안심 기능 제공 (선택 시 마지막 사용 시간 공유)</li>
+        <li>앱 안정성 확보, 오류 분석 및 건전한 서비스 환경 유지</li>
+        <li>사투리 사전 품질 개선 및 서비스 업데이트</li>
         <li>광고 제공 및 성과 측정</li>
     </ul>
 
     <h2>2. 처리하는 데이터 및 수집 방법</h2>
     <ul>
-        <li><strong>민감 입력 보호:</strong> 본 키보드는 비밀번호, 카드번호 등 민감한 입력 필드에서는 입력 내용을 수집하거나 기록하지 않으며, 운영체제(Android)의 보안 정책을 준수합니다.</li>
-        <li><strong>음성 데이터:</strong> 음성 인식 기능은 <span class="highlight">Google의 음성 인식 서비스(Google Speech-to-Text 등)</span>를 통해 처리됩니다. 이 과정에서 음성 데이터가 외부 서버로 전송될 수 있으며, 해당 서비스 제공자의 개인정보처리방침이 적용됩니다.</li>
-        <li><strong>키보드 입력 데이터 (텍스트 보호):</strong> 일반적인 키보드 입력 내용은 기기 외부로 전송되지 않으며, 기기 내에서만 안전하게 처리됩니다. 기기 내에서만 처리되며 외부 서버로 전송되지 않습니다.
-            <br>※ 앱 설정 시 나타나는 "개인 데이터 수집" 경고는 모든 서드파티 키보드에 공통으로 표시되는 안드로이드 시스템 메시지이며, 본 앱은 해당 경고와 달리 민감한 입력 내용(비밀번호, 카드번호 등)을 수집하지 않습니다.</li>
-        <li><strong>가족 안심 데이터 (선택 사항):</strong> 가족 안심 기능을 사용하는 경우, 자녀가 부모님의 안부를 확인할 수 있도록 마지막 키보드 사용 시간(타임스탬프)을 서버로 전송합니다. <span class="highlight">해당 정보는 이용자의 명시적 동의 하에만 수집 및 공유되며, 어떠한 경우에도 입력된 대화 내용은 수집하거나 전송하지 않습니다.</span></li>
-        <li><strong>사투리 교정 데이터 (선택적 수집):</strong> 사용자가 동의한 경우에 한해, 교정한 사투리 조각이 수집될 수 있습니다. 
-            이때 수집 범위는 <span class="highlight">사용자가 직접 입력한 전체 문장이 아닌, 일부 단어 또는 짧은 표현 단위로 제한되며, 개인 메시지, 연락처, 주소 등 개인 식별 가능 정보는 포함되지 않도록 처리됩니다.</span>
+        <li><strong>일반 텍스트 입력 철저 보호:</strong> 본 키보드는 일상적인 대화, 비밀번호, 계좌번호 등 일반 및 민감 입력 내용을 당사 서버로 전송하거나 저장하지 않습니다.</li>
+        
+        <li>
+            <strong>음성 데이터:</strong> 
+            음성 인식 기능은 <span class="highlight">Google의 음성 인식 서비스(Google Speech-to-Text)</span>를 통해 처리되며, 
+            이 과정에서 음성 데이터가 해당 서비스로 전송될 수 있습니다. 
+            <strong>해당 데이터는 당사 서버에 저장되지 않으며</strong>, Google의 개인정보처리방침을 따릅니다.
         </li>
-        <li><strong>기술적 분석 정보 (자동 수집):</strong> 서비스 품질 개선을 위해 아래 항목이 익명화되어 수집될 수 있습니다:
-            <ul>
-                <li>광고 ID(ADID), 앱 내부에서 생성된 익명 식별자(UUID), 기기 정보, 앱 오류 로그, 사용 패턴(비식별)</li>
-            </ul>
+        
+        <li>
+            <strong>어뷰징 방지 및 악성 사용자 제한 (예외):</strong> 
+            서비스 안정성을 심각하게 저해하는 행위(예: 욕설 등 금칙어의 반복 입력 패턴)가 탐지되는 경우에 한해, 
+            쾌적한 서비스 환경 유지를 위해 <span class="highlight">입력된 문장의 원문이 아닌, 제한된 패턴 정보 및 비식별화된 식별자</span>가 
+            서버로 전송되어 처리될 수 있습니다.
         </li>
+        
+        <li><strong>사투리 제보 및 서비스 개선 (선택적 수집):</strong> 사용자가 '사투리 제보' 등 데이터 제공 기능에 명시적으로 참여하여 동의한 경우에 한해, 교정한 결과의 일부가 비식별 형태로 수집되어 사투리 사전 품질 개선에 활용됩니다. 개인 식별 정보는 일절 포함되지 않습니다.</li>
+
+        <li><strong>가족 안심 데이터 (선택):</strong> 가족 안심 기능을 켜신 경우에 한해, 자녀가 안부를 확인할 수 있도록 '마지막 키보드 사용 시간(타임스탬프)'만을 서버로 전송합니다. <span class="highlight">어떠한 경우에도 입력된 대화 내용은 전송하지 않습니다.</span></li>
+        
+        <li><strong>기술적 분석 정보 (자동 수집):</strong> 앱 오류 로그, 비식별 기기 정보, 광고 ID(ADID) 등이 앱 안정성 확보 및 광고 제공을 위해 자동 수집될 수 있습니다.</li>
     </ul>
 
     <h2>3. 제3자 서비스 이용 및 데이터 국외 이전</h2>
-    <p>회사는 원활한 서비스 제공을 위해 아래 외부 서비스를 이용합니다. 광고 제공 등을 위해 제3자가 쿠키 또는 광고 식별자를 사용할 수 있으며, 수집되는 비식별 정보는 글로벌 서버로 이전되어 처리될 수 있습니다.</p>
+    <p>회사는 안정적인 서비스 제공을 위해 아래의 외부 서비스를 이용하며, 비식별화된 기술 정보 및 광고 식별자는 글로벌 서버(미국 등)로 이전되어 처리될 수 있습니다.</p>
     <ul>
-        <li><strong>Google LLC (AdMob, Firebase Analytics / Crashlytics / Firestore, Google Speech-to-Text):</strong> <a href="https://policies.google.com/privacy" class="link-text" target="_blank">Google 개인정보처리방침 확인하기</a></li>
-        <li><strong>데이터 국외 이전:</strong> 서비스 이용 과정에서 발생하는 익명화된 기술 정보 및 광고 식별자는 <span class="highlight">Google의 글로벌 서버(미국 등 해외)에 이전되어 처리될 수 있습니다.</span></li>
+        <li>
+            <strong>Google LLC (AdMob, Firebase Analytics / Crashlytics / Firestore, Google Speech-to-Text)</strong><br>
+            <a href="https://policies.google.com/privacy" class="link-text" target="_blank">
+                Google 개인정보처리방침 및 데이터 처리 안내 확인하기
+            </a>
+        </li>
     </ul>
 
-    <h2>4. 데이터 보유 및 파기 정책</h2>
+    <h2>4. 계정 삭제 및 데이터 파기 정책</h2>
     <ul>
-        <li>앱 삭제 시 기기 내 로컬 데이터는 즉시 파기됩니다.</li>
-        <li>회원 탈퇴 또는 서비스 종료 시 수집된 활동 시간 정보 등은 즉시 파기됩니다.</li>
-        <li>서비스 개선 목적의 익명 로그는 최대 14개월 동안 보존 후 파기됩니다.</li>
+        <li>
+            사용자는 언제든지 <strong>[앱 내 설정 → 회원 탈퇴 및 데이터 초기화]</strong> 메뉴를 통해 계정을 삭제할 수 있습니다.
+        </li>
+        <li class="highlight">
+            탈퇴 시 클라우드 서버에 저장된 아래 데이터는 즉시 영구 삭제되며 복구할 수 없습니다:
+            <ul style="color: var(--pastel-text); font-weight: normal; margin-top: 5px;">
+                <li>Firebase Auth 익명 계정 정보</li>
+                <li>Firestore 사용자 데이터 (users 컬렉션)</li>
+                <li>기기 식별 기반 체험판 데이터 (trial_users 컬렉션)</li>
+            </ul>
+        </li>
+        <li>
+            <strong>주의사항:</strong> 단순히 기기에서 앱을 삭제하는 것만으로는 서버에 보관된 익명 식별자 데이터가 즉시 파기되지 않을 수 있으므로, 완전한 파기를 원하실 경우 반드시 앱 내 '회원 탈퇴' 기능을 이용해 주시기 바랍니다.
+        </li>
+        <li>
+            서비스 개선 및 안정성 목적의 익명 로그(어뷰징 제한 기록 포함)는 최대 14개월 보존 후 자동 파기됩니다.
+        </li>
     </ul>
 
     <h2>5. 이용자의 권리 및 행사 방법</h2>
-    <p>이용자는 기기 설정을 통해 언제든지 맞춤형 광고 수신을 제한하거나 식별자를 재설정할 수 있습니다.</p>
+    <p>이용자는 스마트폰 설정을 통해 언제든지 맞춤형 광고 수신을 제한하거나, 앱 내 설정을 통해 데이터 제공을 철회할 수 있습니다.</p>
     <ul>
-        <li><strong>광고 ID 설정:</strong> 스마트폰 설정 -> 개인정보보호 -> 광고 -> 광고 ID 재설정 또는 삭제</li>
-        <li><strong>데이터 거부:</strong> 앱 내 설정 화면을 통해 선택적 데이터 제공 동의를 언제든 철회할 수 있습니다.</li>
+        <li><strong>광고 ID 재설정:</strong> 스마트폰 설정 → 개인정보보호 → 광고 → 광고 ID 재설정 또는 삭제</li>
+        <li><strong>데이터 거부:</strong> 앱 내 설정 화면을 통해 선택적 데이터 수집 동의를 해제할 수 있습니다. (단, 관련 기능 이용이 제한될 수 있습니다.)</li>
     </ul>
-    <p>단, 일부 기능은 데이터 제공에 동의하지 않을 경우 정상적으로 작동하지 않을 수 있습니다.</p>
 
-    <h2>6. 개인정보처리방침의 변경</h2>
-    <p>본 방침은 관련 법령 또는 서비스 정책 변경에 따라 수정될 수 있으며, 변경 시 앱 내 공지사항 또는 연결 페이지를 통해 지체 없이 고지합니다.</p>
-
-    <h2>7. 개인정보 보호책임자 및 문의처</h2>
+    <h2>6. 개인정보 보호책임자 및 문의처</h2>
     <ul>
         <li>상호명: 블룸소프트 (BloomSoft)</li>
         <li>이메일: bloom51486@gmail.com</li>
     </ul>
 
     <div class="footer">
-        시행일: 2026년 4월 27일<br>
-        최종 개정일: 2026년 4월 27일
+        시행일: 2026년 4월 30일<br>
+        최종 개정일: 2026년 4월 30일
     </div>
 </body>
 </html>

@@ -70,91 +70,94 @@
         <strong style="color: var(--pastel-primary); font-size: 1.1rem;">💡 핵심 요약 및 보안 선언:</strong><br><br>
         본 키보드 앱은 <strong>사용자의 일반적인 입력 텍스트 및 대화 내용을 외부 서버에 저장하지 않습니다.</strong><br>
         단, 음성 인식 기능 사용 시에는 Google의 음성 인식 서비스로 데이터가 전송될 수 있으며, 해당 데이터는 당사 서버에 저장되지 않습니다.<br>
-        개인정보 보호를 위해 안드로이드(Android) 운영체제의 보안 가이드라인을 엄격히 준수하며, 서비스 운영 및 품질 개선에 필요한 최소한의 비식별 데이터만 안전하게 처리합니다.
+        개인정보 보호를 위해 Android 운영체제의 보안 가이드라인을 준수하며, 서비스 운영에 필요한 최소한의 비식별 정보만 처리합니다.
     </div>
 
     <h2>1. 개인정보의 처리 목적</h2>
     <ul>
         <li>음성 인식 기반 텍스트 입력 기능 제공</li>
         <li>가족 안심 기능 제공 (선택 시 마지막 사용 시간 공유)</li>
-        <li>앱 안정성 확보, 오류 분석 및 건전한 서비스 환경 유지</li>
-        <li>사투리 사전 품질 개선 및 서비스 업데이트</li>
+        <li>앱 안정성 확보 및 오류 분석</li>
+        <li>서비스 품질 개선 및 업데이트</li>
         <li>광고 제공 및 성과 측정</li>
     </ul>
 
     <h2>2. 처리하는 데이터 및 수집 방법</h2>
     <ul>
-        <li><strong>일반 텍스트 입력 철저 보호:</strong> 본 키보드는 일상적인 대화, 비밀번호, 계좌번호 등 일반 및 민감 입력 내용을 당사 서버로 전송하거나 저장하지 않습니다.</li>
+        <li><strong>텍스트 입력 보호:</strong> 입력된 문장, 비밀번호 등은 서버로 전송하거나 저장하지 않습니다.</li>
         
         <li>
             <strong>음성 데이터:</strong> 
-            음성 인식 기능은 <span class="highlight">Google의 음성 인식 서비스(Google Speech-to-Text)</span>를 통해 처리되며, 
-            이 과정에서 음성 데이터가 해당 서비스로 전송될 수 있습니다. 
-            <strong>해당 데이터는 당사 서버에 저장되지 않으며</strong>, Google의 개인정보처리방침을 따릅니다.
+            Google 음성 인식 서비스(Google Speech-to-Text)를 통해 처리되며,
+            해당 데이터는 Google 정책에 따라 처리됩니다.
         </li>
         
         <li>
-            <strong>어뷰징 방지 및 악성 사용자 제한 (예외):</strong> 
-            서비스 안정성을 심각하게 저해하는 행위(예: 욕설 등 금칙어의 반복 입력 패턴)가 탐지되는 경우에 한해, 
-            쾌적한 서비스 환경 유지를 위해 <span class="highlight">입력된 문장의 원문이 아닌, 제한된 패턴 정보 및 비식별화된 식별자</span>가 
-            서버로 전송되어 처리될 수 있습니다.
+            <strong>어뷰징 방지 (예외):</strong> 
+            반복적인 악성 입력 패턴이 감지될 경우,
+            <span class="highlight">문장 원문이 아닌 일부 패턴 정보 및 비식별 식별자</span>만 처리될 수 있습니다.
+        </li>
+
+        <li>
+            <strong>가족 안심 기능:</strong> 
+            마지막 사용 시간만 전송되며,
+            <span class="highlight">대화 내용은 절대 포함되지 않습니다.</span>
         </li>
         
-        <li><strong>사투리 제보 및 서비스 개선 (선택적 수집):</strong> 사용자가 '사투리 제보' 등 데이터 제공 기능에 명시적으로 참여하여 동의한 경우에 한해, 교정한 결과의 일부가 비식별 형태로 수집되어 사투리 사전 품질 개선에 활용됩니다. 개인 식별 정보는 일절 포함되지 않습니다.</li>
-
-        <li><strong>가족 안심 데이터 (선택):</strong> 가족 안심 기능을 켜신 경우에 한해, 자녀가 안부를 확인할 수 있도록 '마지막 키보드 사용 시간(타임스탬프)'만을 서버로 전송합니다. <span class="highlight">어떠한 경우에도 입력된 대화 내용은 전송하지 않습니다.</span></li>
-        
-        <li><strong>기술적 분석 정보 (자동 수집):</strong> 앱 오류 로그, 비식별 기기 정보, 광고 ID(ADID) 등이 앱 안정성 확보 및 광고 제공을 위해 자동 수집될 수 있습니다.</li>
+        <li>
+            <strong>기술 정보:</strong> 오류 로그, 기기 정보, 광고 ID 등
+        </li>
     </ul>
 
-    <h2>3. 제3자 서비스 이용 및 데이터 국외 이전</h2>
-    <p>회사는 안정적인 서비스 제공을 위해 아래의 외부 서비스를 이용하며, 비식별화된 기술 정보 및 광고 식별자는 글로벌 서버(미국 등)로 이전되어 처리될 수 있습니다.</p>
+    <h2>3. 제3자 서비스 이용</h2>
     <ul>
         <li>
-            <strong>Google LLC (AdMob, Firebase Analytics / Crashlytics / Firestore, Google Speech-to-Text)</strong><br>
+            Google LLC (Firebase, AdMob, Speech API)<br>
             <a href="https://policies.google.com/privacy" class="link-text" target="_blank">
-                Google 개인정보처리방침 및 데이터 처리 안내 확인하기
+                Google 개인정보처리방침
             </a>
         </li>
     </ul>
 
-    <h2>4. 계정 삭제 및 데이터 파기 정책</h2>
+    <h2>4. 계정 삭제 및 데이터 파기</h2>
     <ul>
-        <li>
-            사용자는 언제든지 <strong>[앱 내 설정 → 회원 탈퇴 및 데이터 초기화]</strong> 메뉴를 통해 계정을 삭제할 수 있습니다.
-        </li>
+        <li>앱 내 설정에서 언제든지 계정 삭제가 가능하며, <strong>앱을 삭제하신 경우 고객센터 이메일(bloom51486@gmail.com)을 통해서도 탈퇴 및 데이터 삭제를 요청</strong>하실 수 있습니다.</li>
+
         <li class="highlight">
-            탈퇴 시 클라우드 서버에 저장된 아래 데이터는 즉시 영구 삭제되며 복구할 수 없습니다:
-            <ul style="color: var(--pastel-text); font-weight: normal; margin-top: 5px;">
-                <li>Firebase Auth 익명 계정 정보</li>
-                <li>Firestore 사용자 데이터 (users 컬렉션)</li>
-                <li>기기 식별 기반 체험판 데이터 (trial_users 컬렉션)</li>
+            탈퇴 시 아래 데이터는 즉시 삭제됩니다:
+            <ul style="color: var(--pastel-text); font-weight: normal;">
+                <li>Firebase Auth 계정</li>
+                <li>Firestore 사용자 데이터</li>
             </ul>
         </li>
+
         <li>
-            <strong>주의사항:</strong> 단순히 기기에서 앱을 삭제하는 것만으로는 서버에 보관된 익명 식별자 데이터가 즉시 파기되지 않을 수 있으므로, 완전한 파기를 원하실 경우 반드시 앱 내 '회원 탈퇴' 기능을 이용해 주시기 바랍니다.
+            <strong>부정 이용 방지 목적의 제한적 보관:</strong><br>
+            무료 체험 남용 및 이벤트 중복 수령 방지를 위해
+            <span class="highlight">비식별화된 기기 식별값 및 이용 이력 일부</span>는
+            관련 법령 및 서비스 보호 목적에 따라 <strong>최대 1년간 별도 분리 보관</strong> 후 파기됩니다.
         </li>
+
         <li>
-            서비스 개선 및 안정성 목적의 익명 로그(어뷰징 제한 기록 포함)는 최대 14개월 보존 후 자동 파기됩니다.
+            앱 삭제만으로는 서버 데이터가 삭제되지 않으며,
+            반드시 앱 내 탈퇴 기능을 이용해야 합니다.
         </li>
     </ul>
 
-    <h2>5. 이용자의 권리 및 행사 방법</h2>
-    <p>이용자는 스마트폰 설정을 통해 언제든지 맞춤형 광고 수신을 제한하거나, 앱 내 설정을 통해 데이터 제공을 철회할 수 있습니다.</p>
+    <h2>5. 이용자의 권리</h2>
     <ul>
-        <li><strong>광고 ID 재설정:</strong> 스마트폰 설정 → 개인정보보호 → 광고 → 광고 ID 재설정 또는 삭제</li>
-        <li><strong>데이터 거부:</strong> 앱 내 설정 화면을 통해 선택적 데이터 수집 동의를 해제할 수 있습니다. (단, 관련 기능 이용이 제한될 수 있습니다.)</li>
+        <li>광고 ID 재설정 및 삭제 가능</li>
+        <li>데이터 수집 동의 철회 가능</li>
     </ul>
 
-    <h2>6. 개인정보 보호책임자 및 문의처</h2>
+    <h2>6. 문의처</h2>
     <ul>
-        <li>상호명: 블룸소프트 (BloomSoft)</li>
-        <li>이메일: bloom51486@gmail.com</li>
+        <li>블룸소프트 (BloomSoft)</li>
+        <li>bloom51486@gmail.com</li>
     </ul>
 
     <div class="footer">
-        시행일: 2026년 4월 30일<br>
-        최종 개정일: 2026년 4월 30일
+        시행일: 2026년 4월 30일
     </div>
 </body>
 </html>

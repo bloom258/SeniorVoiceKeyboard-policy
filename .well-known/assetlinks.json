@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.bloom.seniorvoiceboard",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_RELEASE_SHA256_FINGERPRINT"
+        "82:ce:c0:a3:46:28:97:19:ae:17:0c:90:c9:54:4b:4b:be:5a:a5:7b:5f:e2:f4:9a:36:4c:75:42:1d:3b:46:05",
+        "c4:8e:bb:37:a4:13:6f:f8:c5:31:ae:82:c0:e7:e2:b3:3b:5b:3a:56:4f:b0:e0:75:3f:c1:f9:61:b8:45:58:bb"
       ]
     }
   }

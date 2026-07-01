@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시니어 목소리 키보드 VIP 선물</title>
+  <style>
+    body { font-family: sans-serif; max-width: 28rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+    a { color: #2e7d32; word-break: break-all; }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var from = (params.get('from') || '').trim();
+      var pkg = 'com.bloom.seniorvoiceboard';
+      if (!from) {
+        document.addEventListener('DOMContentLoaded', function () {
+          document.getElementById('status').textContent = '링크 정보가 올바르지 않습니다. 부모님께 다시 보내달라고 요청해 주세요.';
+        });
+        return;
+      }
+      var referrer = encodeURIComponent('gift_from=' + from);
+      var storeUrl = 'https://play.google.com/store/apps/details?id=' + pkg + '&referrer=' + referrer;
+      var customScheme = 'bloomnote://vipgift?from=' + encodeURIComponent(from);
+      var intentUrl = 'intent://vipgift?from=' + encodeURIComponent(from)
+        + '#Intent;scheme=bloomnote;package=' + pkg
+        + ';S.browser_fallback_url=' + encodeURIComponent(storeUrl) + ';end';
+      var isAndroid = /Android/i.test(navigator.userAgent);
+      document.addEventListener('DOMContentLoaded', function () {
+        var manual = document.getElementById('manual');
+        manual.href = isAndroid ? intentUrl : storeUrl;
+        manual.textContent = isAndroid ? '앱에서 선물하기 열기' : 'Play 스토어에서 설치하기';
+      });
+      if (isAndroid) {
+        window.location.replace(intentUrl);
+      } else {
+        window.location.replace(storeUrl);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1>VIP 선물 안내</h1>
+  <p id="status">앱으로 이동 중입니다…</p>
+  <p>자동으로 열리지 않으면 아래 링크를 눌러 주세요.</p>
+  <p><a id="manual" href="#">열기</a></p>
+</body>
+</html>
